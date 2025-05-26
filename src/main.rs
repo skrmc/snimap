@@ -1,5 +1,3 @@
-#![feature(result_option_inspect)]
-
 use std::{collections::HashSet, env, sync::Arc, time::Duration};
 
 use actix_web::{

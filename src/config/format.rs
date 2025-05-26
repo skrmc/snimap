@@ -40,6 +40,7 @@ pub struct Mapping {
 pub trait Switchable: Sized {
     fn enable(&self) -> Option<bool>;
     fn enable_sni(&self) -> Option<bool>;
+    #[allow(unused)]
     fn enable_mut(&mut self) -> &mut Option<bool>;
     fn enable_sni_mut(&mut self) -> &mut Option<bool>;
     fn enabled(&self) -> bool {
